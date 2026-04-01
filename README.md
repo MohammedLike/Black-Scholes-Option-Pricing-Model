@@ -364,22 +364,47 @@ Newton-Raphson iteration with analytical Vega:
 
 The pipeline generates **14 publication-quality plots:**
 
-| Plot | Description |
-|------|-------------|
-| `dashboard.png` | Summary dashboard with Greeks table, parity check, higher-order Greeks |
-| `greeks_vs_spot.png` | 6-panel: all Greeks as a function of spot price (call + put) |
-| `greeks_vs_time.png` | 6-panel: all Greeks as a function of time to expiry |
-| `price_surface_3d.png` | 3D surface: option price over (spot, volatility) grid |
-| `delta_surface_3d.png` | 3D surface: delta over (spot, time) grid |
-| `gamma_surface_3d.png` | 3D surface: gamma over (spot, volatility) grid |
-| `theta_surface_3d.png` | 3D surface: theta over (spot, time) grid |
-| `scenario_heatmap.png` | Heatmap: prices across discrete (spot, volatility) scenarios |
-| `pnl_diagram.png` | P&L at expiry for long call and long put positions |
-| `mc_paths.png` | 100 simulated GBM price paths, color-coded by ITM/OTM |
-| `mc_distribution.png` | Terminal price distribution + call payoff distribution |
-| `mc_convergence.png` | MC price convergence + standard error decay (log-log) |
-| `iv_convergence.png` | Newton-Raphson sigma path + pricing error convergence |
-| `volatility_smile.png` | Implied volatility vs strike and vs moneyness |
+#### 1. Summary Dashboard
+![Summary dashboard with Greeks table, parity check, higher-order Greeks](outputs/plots/dashboard.png)
+
+#### 2. Greeks vs. Spot Price
+![6-panel: all Greeks as a function of spot price (call + put)](outputs/plots/greeks_vs_spot.png)
+
+#### 3. Greeks vs. Time
+![6-panel: all Greeks as a function of time to expiry](outputs/plots/greeks_vs_time.png)
+
+#### 4. Price Surface (3D)
+![3D surface: option price over (spot, volatility) grid](outputs/plots/price_surface_3d.png)
+
+#### 5. Delta Surface (3D)
+![3D surface: delta over (spot, time) grid](outputs/plots/delta_surface_3d.png)
+
+#### 6. Gamma Surface (3D)
+![3D surface: gamma over (spot, volatility) grid](outputs/plots/gamma_surface_3d.png)
+
+#### 7. Theta Surface (3D)
+![3D surface: theta over (spot, time) grid](outputs/plots/theta_surface_3d.png)
+
+#### 8. Scenario Heatmap
+![Heatmap: prices across discrete (spot, volatility) scenarios](outputs/plots/scenario_heatmap.png)
+
+#### 9. P&L Diagram
+![P&L at expiry for long call and long put positions](outputs/plots/pnl_diagram.png)
+
+#### 10. Monte Carlo Paths
+![100 simulated GBM price paths, color-coded by ITM/OTM](outputs/plots/mc_paths.png)
+
+#### 11. Monte Carlo Distribution
+![Terminal price distribution + call payoff distribution](outputs/plots/mc_distribution.png)
+
+#### 12. Monte Carlo Convergence
+![MC price convergence + standard error decay (log-log)](outputs/plots/mc_convergence.png)
+
+#### 13. Implied Volatility Convergence
+![Newton-Raphson sigma path + pricing error convergence](outputs/plots/iv_convergence.png)
+
+#### 14. Volatility Smile
+![Implied volatility vs strike and vs moneyness](outputs/plots/volatility_smile.png)
 
 <br>
 
